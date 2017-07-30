@@ -1,0 +1,46 @@
+<!-- 首页 -->
+
+<view class="container">
+  <view class="slide">
+    <swiper indicator-dots="true"
+     autoplay="true" interval="4000" duration="{1000}">
+     <block wx:for="{{imgUrls}}" wx:key="imgSlide">
+       <swiper-item>
+         <image src="{{item}}" class="slide-image" width="350" height="150"
+	 mode="aspectFill"/>
+       </swiper-item>
+     </block>
+    </swiper>
+  </view>
+  <view>
+    <text class="title">冠华门业欢迎你</text>
+  </view>
+  <view class="board">
+    <navigator url="../list/list?type=in_theaters&name=正在热映" hover-class="none">
+    <view class="board-item">
+      
+      <image src="../../images/location.jpg" />
+      <text>广东省佛山市顺德区龙江镇</text>
+    </view>
+    </navigator>
+    <navigator url="../list/list?type=coming_soon&name=即将上映" hover-class="none">
+    <view class="board-item">
+      
+      <image src="../../images/telephone.jpg" />
+      <text>1552xxxxxxxx</text>
+    </view>
+    </navigator>
+    <navigator url="../list/list?type=top250&name=TOP250" hover-class="none">
+    <view class="board-item">
+      <image src="../../images/description.jpg" />
+      <text>店铺介绍就写埋几时开始创业，之后主营咩甘应该够了</text>
+    </view>
+    </navigator>
+    <!--<navigator url="../list/list?type=us_box&name=北美票房榜" hover-class="none">
+    <view class="board-item">
+      <text>产品介绍3</text>
+      <image src="../../images/arrowright.png" />
+    </view>
+    </navigator> -->
+  </view>
+</view>

@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/classify/classify"   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "冠华门业",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "backgroundColor":"#fff",
+    "color":"#707070",
+    "selectedColor": "#a82727",
+    "borderStyle":"black",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"/images/Home.jpg",
+      "selectedIconPath":"/images/Home-active.jpg"
+    },
+    {
+      "pagePath": "pages/classify/classify",
+      "text": "分类",
+      "iconPath": "/images/classify.jpg",
+      "selectedIconPath": "/images/classify-active.jpg"
+    }
+    ]
+  }
+}
